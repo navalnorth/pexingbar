@@ -1,7 +1,7 @@
 <template>
     <div class="tout">
         <BanAccueil />
-        <div class="py-4">
+        <div class="tout py-4">
             <p class="font text-center text-white text-3xl">PLUS DE 300m²</p>
             <p class="font2 text-center text-white text-md leading-none font-bold">
                 POUR JOUER EN FAMILLE <br /> OU ENTRE AMIS
@@ -10,11 +10,11 @@
 
         <img src="../assets/img/homePc.png" class="w-full">
 
-        <div class="p-4 flex flex-col justify-center items-center">
-            <Btn textColor="var(--bleu)" background="var(--blanc)" class="w-56 font-bold">
+        <div class="tout p-4 flex flex-col justify-center items-center">
+            <Btn textColor="var(--bleu)" background="var(--blanc)" class="font-black py-4 p-24">
                 réserver<br /> une partie
             </Btn>
-            <Btn textColor="var(--blanc)" background="var(--blanc20)" class="mt-6 w-56">
+            <Btn textColor="var(--blanc)" background="var(--blanc20)" class="mt-6 py-4 px-16">
                 + d'infos
             </Btn>
         </div>
@@ -22,6 +22,18 @@
         <div>
             <avis/>
         </div>
+        <div>
+            <TextAnimation/>
+        </div>
+        <!-- <div>
+            <BanEspaceJeux />
+        </div> -->
+        <div>
+            <EventGame />
+        </div>
+        <div>
+            <BarDesign />
+        </div><br/>
     </div>
 </template>
 
@@ -30,7 +42,10 @@
 import BanAccueil from "../components/banAccueil.vue";
 import Btn from "../components/btn.vue";
 import avis from "../components/avis.vue";
-
+import TextAnimation from "../components/textAnimation.vue";
+import BanEspaceJeux from "../components/banEspaceJeux.vue";
+import EventGame from "../components/eventGame.vue";
+import BarDesign from "../components/barDesign.vue";
 
 
 </script>
@@ -38,7 +53,7 @@ import avis from "../components/avis.vue";
 
 <style scoped>
 .tout {
-    background-color: #2D005DB2;
+    background-color: #2D005D;
 }
 
 .font {
