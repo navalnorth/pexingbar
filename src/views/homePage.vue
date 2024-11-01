@@ -20,16 +20,31 @@
         </div>
 
         <div>
-            <avis/>
-        </div>
-        <div>
             <TextAnimation/>
         </div>
-        <!-- <div>
-            <BanEspaceJeux />
-        </div> -->
         <div>
-            <EventGame />
+            <BanEspaceJeux image="src/assets/img/manetteEspaceJeux.png"/>
+        </div>
+        <div>
+            <Avis/>
+        </div>
+
+        <div>
+            <EventGame image="src/assets/img/vrEvent.png">
+                <template #title>Soirees speciales gaming</template>
+                <template #subtitle>Escape Game <br> realite virtuelle</template>
+                <template #description>
+                  Plongez en équipe dans une mission <br />
+                  VR immersive ! Résolvez des énigmes <br />
+                  et échappez-vous avant la fin du temps <br>
+                  imparti. Serez-vous à la hauteur ?
+                </template>
+                <template #maxPlayers>4 joueurs max</template>
+                <template #gameDuration>1h de jeu garantie</template>
+                <template #eventDate>21 decembre 2024</template>
+                <template #btnText>s'inscrire</template>
+                <template #allEventsBtn>Tous les événements</template>
+              </EventGame>
         </div>
         <div>
             <BarDesign />
@@ -41,7 +56,7 @@
 <script lang="ts" setup>
 import BanAccueil from "../components/banAccueil.vue";
 import Btn from "../components/btn.vue";
-import avis from "../components/avis.vue";
+import Avis from "../components/avis.vue";
 import TextAnimation from "../components/textAnimation.vue";
 import BanEspaceJeux from "../components/banEspaceJeux.vue";
 import EventGame from "../components/eventGame.vue";
@@ -52,10 +67,6 @@ import BarDesign from "../components/barDesign.vue";
 
 
 <style scoped>
-.tout {
-    background-color: #2D005D;
-}
-
 .font {
     font-family: var(--futuraBold);
 }

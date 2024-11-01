@@ -10,9 +10,6 @@
 </template>
 
 <style scoped>
-.tout {
-    background-color: #2D005D;
-}
 .marquee {
     color: rgb(255, 48, 76);
     font-family: var(--orbitron);

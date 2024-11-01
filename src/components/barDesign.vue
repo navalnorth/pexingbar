@@ -12,9 +12,9 @@
 
         <div class="py-4 flex justify-center items-center mr-6">
             <p class="texte text-white text-md">
-                Découvrez nos nombreuses boissons,<br/>
+                Decouvrez nos nombreuses boissons,<br/>
                 cocktails maison et snacks savoureux.<br/>
-                De quoi vous régaler entre amis sans<br/>
+                De quoi vous regaler entre amis sans<br/>
                 quitter la partie !
             </p>
         </div>

@@ -54,10 +54,6 @@ const openSousMenu = () => {
 
 </script>
 <style scoped>
-.tout {
-    background-color: #2D005DB2;
-}
-
 .font {
     font-family: var(--futura);
 }
