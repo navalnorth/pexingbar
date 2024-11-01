@@ -19,7 +19,7 @@
             <p class="text-white font2 text-center text-xl">
                 “ Super aprem avec mes potes ! <br>je reviendrais c’est sur ! “
             </p>
-            <hr class="ligne">
+            <hr class="hr">
             </hr>
             <div class="flex text-white gap-5 p-2 items-center">
                 <img class="h-8" src="./../assets/img/avish.png" alt="">
@@ -45,15 +45,15 @@ import { AnFilledStar } from '@kalimahapps/vue-icons';
 .font {
     font-family: var(--futuraBold);
 }
+.font2 {
+    font-family: var(--futura);
+}
 .card{
     background: linear-gradient(0deg, rgba(255, 0, 34, 0.1) 0%, rgb(0, 0, 0, 0.1) 150% );
     border: 1px solid rgb(255, 192, 203,0.2);
 }
-.font2 {
-    font-family: var(--futura);
-}
 
-.ligne {
+.hr {
    background: var(--ligne);
     height: 1px;
     width: 60vw;
