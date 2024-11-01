@@ -20,7 +20,7 @@
         </div>
 
         <div>
-            
+            <avis/>
         </div>
     </div>
 </template>
@@ -29,6 +29,7 @@
 <script lang="ts" setup>
 import BanAccueil from "../components/banAccueil.vue";
 import Btn from "../components/btn.vue";
+import avis from "../components/avis.vue";
 
 
 </script>
