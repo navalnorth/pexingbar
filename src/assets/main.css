@@ -13,8 +13,9 @@
 
 :root {
   --gradRougeBan: linear-gradient(130deg, #00ffaa -160%, #2D005D 50%, #FF304C 130% );
+  --gradRougeEvent: linear-gradient(100deg,#FF304C -50%, #2D005D 70%, #00ffaa 130%);
   --gradRougeBanZ: linear-gradient(90deg, #FF304C 50%, #2D005D 99%);
-  --blanc: white;
+  --blanc: #E3DEE8;
   --bleu: rgba(45, 0, 93, 0.7);
   --blanc20: rgba(255, 255, 255, 0.2);
   --futura: 'Futura';

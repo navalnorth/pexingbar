@@ -1,5 +1,5 @@
 <template>
-    <button class="button shadow-xl" :style="buttonStyle">
+    <button class="button shadow-2xl" :style="buttonStyle">
         <slot></slot>
     </button>
 </template>
@@ -18,7 +18,6 @@ const buttonStyle = computed(() => ({
 
 <style scoped>
 .button {
-    height: 45px;
     cursor: pointer;
     border-radius: 4px;
     font-family: var(--orbitron);
@@ -26,5 +25,6 @@ const buttonStyle = computed(() => ({
     line-height: 16px;
     text-align: center;
     text-transform: uppercase;
+    box-shadow: 1px 5px 5px -2px black;
 }
 </style>

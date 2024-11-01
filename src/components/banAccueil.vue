@@ -1,17 +1,17 @@
 <template>
-    <div class="tout h-80 w-full">
+    <div class="tout w-full">
         <div class="flex flex-col justify-center text-left ml-8">
-            <div class="mt-8">
-                <p class="font2 text-left uppercase leading-none text-4xl">joue<span class="gradient">z</span></p>
-                <p class="font text-left uppercase leading-none text-4xl text-white">mangez</p>
-                <p class="font text-left uppercase leading-none text-4xl text-white">partagez</p>
+            <div class="mt-7">
+                <p class="font2 text-left uppercase leading-none text-5xl">joue<span class="gradient">z</span></p>
+                <p class="font text-left uppercase leading-none text-5xl text-white">mangez</p>
+                <p class="font text-left uppercase leading-none text-5xl text-white">partagez</p>
             </div>
         </div>
 
-        <div class="flex justify-center items-center gap-2 px-4 mt-16 text-white">
-            <button class="bouton text-center py-1 rounded-md opacity-90 uppercase">jeux video</button>
-            <button class="bouton text-center py-1 rounded-md opacity-90 uppercase">réalté virtuelle</button>
-            <button class="bouton text-center py-1 rounded-md opacity-90 uppercase">jeux de société</button>
+        <div class="flex justify-center items-center px-5 gap-2 mt-16 text-white">
+            <button class="bouton text-center py-2 px-3 rounded-md opacity-90 uppercase">jeux video</button>
+            <button class="bouton text-center py-2 px-3 rounded-md opacity-90 uppercase">réalté virtuelle</button>
+            <button class="bouton text-center py-2 px-3 rounded-md opacity-90 uppercase">jeux de société</button>
         </div>
 
     </div>
@@ -27,6 +27,7 @@
     background: var(--gradRougeBan);
     position: relative;
     z-index: 1;
+    height: 340px;
 }
 
 .tout::before {
@@ -74,7 +75,7 @@
     right: 0;
     bottom: 0;
     background: white;
-    opacity: 0.12;
+    opacity: 0.1;
     backdrop-filter: blur(20px);
     z-index: -1;
     border-radius: inherit;
@@ -87,7 +88,7 @@
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.15);
     border-radius: inherit;
 }
 </style>
