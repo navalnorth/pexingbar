@@ -20,6 +20,9 @@
         </div>
 
         <div>
+            <avis/>
+        </div>
+        <div>
             <TextAnimation/>
         </div>
         <!-- <div>
@@ -38,6 +41,7 @@
 <script lang="ts" setup>
 import BanAccueil from "../components/banAccueil.vue";
 import Btn from "../components/btn.vue";
+import avis from "../components/avis.vue";
 import TextAnimation from "../components/textAnimation.vue";
 import BanEspaceJeux from "../components/banEspaceJeux.vue";
 import EventGame from "../components/eventGame.vue";

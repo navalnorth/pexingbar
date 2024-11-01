@@ -21,6 +21,7 @@
   --futura: 'Futura';
   --futuraBold: 'FuturaBold';
   --orbitron: 'Orbitron';
+  --ligne: linear-gradient(90deg, white 0%, transparent 120%);;
 }
 
 
