@@ -12,7 +12,7 @@
                     <button
                         class="button text-lg uppercase mt-5 w-40 bg-white font-semibold rounded-md h-10">réserver</button>
 
-                    <li class="font text-md uppercase mt-5 cursor-pointer" >
+                    <li class="font text-md uppercase mt-5 cursor-pointer">
                         <div class="flex justify-end mr-32" @click="openSousMenu" v-if="isClosed2">
                             <AnOutlinedDown class="text-white cursor-pointer absolute mt-1" />
                         </div>
@@ -30,8 +30,8 @@
                     <li class="font text-md uppercase mt-5">nos evenements</li>
                     <li class="font text-md uppercase mt-5 font-extrabold">reserver une partie</li>
                     <li class="font text-md uppercase mt-5">le concept pexing bar</li>
-                    <li class="font text-md uppercase mt-5">le bar-snack</li>
-                    <li class="font text-md uppercase mt-5 pb-5">contact</li>
+                    <li @click="bar" class="font text-md uppercase mt-5">le bar-snack</li>
+                    <li @click="contact" class="font text-md uppercase mt-5 pb-5">contact</li>
                 </ul>
             </nav>
         </div>
@@ -41,7 +41,7 @@
 <script setup lang="ts">
 import { AnOutlinedMenu, AnOutlinedDown, AkChevronUpSmall } from '@kalimahapps/vue-icons';
 import { ref } from 'vue';
-import  router from '@/router';
+import router from '@/router';
 
 const isClosed = ref(true)
 const isClosed2 = ref(false)
@@ -56,7 +56,7 @@ const openSousMenu = () => {
     isClosed2.value = !isClosed2.value
 }
 
-const espaceGame = () =>  {
+const espaceGame = () => {
     router.push('/espace-game');
     openMenu();
 }
@@ -76,9 +76,19 @@ const societe = () => {
     openMenu();
 }
 
+const bar = () => {
+    router.push('/bar');
+    openMenu();
+}
+
+const contact = () => {
+    router.push('/contact');
+    openMenu();
+}
+
 </script>
 <style scoped>
-.tout{
+.tout {
     position: fixed;
     width: 100%;
     height: 80px;
@@ -87,8 +97,8 @@ const societe = () => {
     background-color: #2D005D
 }
 
-.bgn{
-    background-color: rgb(45, 0, 93,0.8);
+.bgn {
+    background-color: rgb(45, 0, 93, 0.8);
     width: 100%;
 }
 

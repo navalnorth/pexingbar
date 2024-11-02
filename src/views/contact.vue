@@ -31,7 +31,7 @@
                     {{ succes }}
                 </p>
             </div>
-            <Btn @click.prevent="envoyer" textColor="var(--bleu)" background="var(--blanc)" class="font-black py-4 px-16 mt-8">
+            <Btn @click.prevent="envoyer" textColor="var(--bleu)" background="var(--blanc)" class="mb-4 font-black py-4 px-16 mt-8">
                 Envoyer<br /> mon message
             </Btn>
         </form>

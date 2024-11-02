@@ -12,7 +12,7 @@
             et <br> jeux societe, seul, en famille ou entre amis.
         </p>
         <div class="flex items-center my-5 gap-3 font2">
-            <img src="../assets/img/footerMaps.png" class="w-10">
+            <img src="../assets/img/FooterMaps.png" class="w-10">
             <p>46 place d'armes <br>
                 59300 Valenciennes</p>
 
