@@ -23,7 +23,7 @@
             <TextAnimation/>
         </div>
         <div>
-            <BanEspaceJeux :image="manetteEspaceJeux">Nos espaces jeux</BanEspaceJeux>
+            <BanEspaceJeux @click="game" :image="manetteEspaceJeux">Nos espaces jeux</BanEspaceJeux>
         </div>
         <div>
             <Avis/>
@@ -63,8 +63,11 @@ import EventGame from "../components/eventGame.vue";
 import BarDesign from "../components/barDesign.vue";
 import vrEvent from '../assets/img/vrEvent.png';
 import manetteEspaceJeux from '../assets/img/manetteEspaceJeux.png';
+import router from "@/router";
 
-
+const game = () => {
+    router.push('jeux-video');
+}
 </script>
 
 

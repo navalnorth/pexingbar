@@ -9,9 +9,9 @@
         </div>
 
         <div class="flex justify-center items-center px-5 gap-2 mt-16 text-white">
-            <button class="bouton text-center py-2 px-3 rounded-md opacity-90 uppercase">jeux video</button>
-            <button class="bouton text-center py-2 px-3 rounded-md opacity-90 uppercase">réalté virtuelle</button>
-            <button class="bouton text-center py-2 px-3 rounded-md opacity-90 uppercase">jeux de société</button>
+            <button @click="game" class="bouton text-center py-2 px-3 rounded-md opacity-90 uppercase">jeux video</button>
+            <button @click="realite"  class="bouton text-center py-2 px-3 rounded-md opacity-90 uppercase">réalté virtuelle</button>
+            <button @click="societe" class="bouton text-center py-2 px-3 rounded-md opacity-90 uppercase">jeux de société</button>
         </div>
 
     </div>
@@ -19,7 +19,18 @@
 
 
 <script setup lang="ts">
+import router from "@/router";
+const realite = () => {
+    router.push('realite-virtuelle'); 
+}
 
+const game = () => {
+    router.push('jeux-video');
+}
+
+const societe = () => {
+    router.push('jeux-societe'); 
+}
 </script>
 
 <style scoped>

@@ -45,7 +45,7 @@
                 <p>Le concept</p>
                 <p>Le bar</p>
                 <p>Nos espaces jeux</p>
-                <p>Nos événements</p>
+                <p>Nos evenements</p>
                 <p>Wall of fame</p>
             </div>
             <div class="font2 mr-4">

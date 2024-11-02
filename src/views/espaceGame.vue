@@ -66,18 +66,15 @@ import gamesociete from '../assets/img/game-societe.png';
 import vrEvent from '../assets/img/vrEvent.png';
 
 const realite = () => {
-    router.push('realite-virtuelle');
-   
+    router.push('realite-virtuelle'); 
 }
 
 const game = () => {
     router.push('jeux-video');
-   
 }
 
 const societe = () => {
-    router.push('jeux-societe');
-    
+    router.push('jeux-societe'); 
 }
 </script>
 
