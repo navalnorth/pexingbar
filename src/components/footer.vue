@@ -76,8 +76,8 @@
 function scrollToTop() {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Adds smooth scrolling effect
-    });
+        behavior: 'smooth'
+    })
 }
 </script>
 <style scoped>
