@@ -15,13 +15,13 @@
             </Btn>
         </div>
         <div class="">
-            <div class="my-5">
-                <BanEspaceJeux image="src/assets/img/manetteEspaceJeux.png">JEUX VIDEO</BanEspaceJeux>
+            <div class="my-5 " >
+                <BanEspaceJeux @click="game" image="src/assets/img/manetteEspaceJeux.png">JEUX VIDEO</BanEspaceJeux>
             </div>
-            <div class="my-5">
+            <div class="my-5" @click="realite">
                 <BanEspaceJeux image="src/assets/img/realite-virtuelle.png">REALITE VIRTUELLE</BanEspaceJeux>
             </div>
-            <div class="my-5">
+            <div class="my-5" @click="societe">
                 <BanEspaceJeux image="src/assets/img/game-societe.png">JEUX DE SOCIETE</BanEspaceJeux>
             </div>
         </div>
@@ -59,6 +59,22 @@ import BanEspaceJeux from "../components/banEspaceJeux.vue";
 import Avis from "../components/avis.vue";
 import EventGame from "../components/eventGame.vue";
 import BarDesign from "../components/barDesign.vue";
+import router from "@/router";
+
+const realite = () => {
+    router.push('realite-virtuelle');
+   
+}
+
+const game = () => {
+    router.push('jeux-video');
+   
+}
+
+const societe = () => {
+    router.push('jeux-societe');
+    
+}
 </script>
 
 <style>

@@ -2,7 +2,7 @@
     <div class="tout h-full py-4">
 
         <div class="flex justify-between">
-            <a href="/"><img src="../assets/img/logo.png" class="w-10 ml-8"></a>
+            <a href="/" @click="accueil"><img src="../assets/img/logo.png" class="w-10 ml-8"></a>
             <AnOutlinedMenu @click="openMenu" class="text-white text-5xl mr-6 cursor-pointer" />
         </div>
 
@@ -21,9 +21,9 @@
                         </div>
                         <p @click="espaceGame">les espaces jeux </p>
                         <ul v-if="isClosed2">
-                            <li class="py-2 text-xs"><a href="#" @click="game">jeux video</a></li>
-                            <li class="py-2 text-xs"><a href="#" @click="realite">realite virtuelle</a></li>
-                            <li class="py-2 text-xs"><a href="#" @click="societe">jeux de societe</a></li>
+                            <li @click="game" class="py-2 text-xs">jeux video</li>
+                            <li @click="realite" class="py-2 text-xs">realite virtuelle</li>
+                            <li @click="societe" class="py-2 text-xs">jeux de societe</li>
                         </ul>
                     </li>
 
@@ -46,6 +46,9 @@ import  router from '@/router';
 const isClosed = ref(true)
 const isClosed2 = ref(false)
 
+const accueil = () => {
+    router.push('/')
+}
 const openMenu = () => {
     isClosed.value = !isClosed.value
 }
