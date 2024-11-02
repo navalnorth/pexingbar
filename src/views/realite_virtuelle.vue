@@ -39,7 +39,7 @@
             <Avis />
         </div>
         <div>
-            <EventGame image="src/assets/img/vrEvent.png">
+            <EventGame :image="vrEvent">
                 <template #title>EVENEMENTS REALITE VIRTUELLE</template>
                 <template #subtitle>Escape Game <br> realite virtuelle</template>
                 <template #description>
@@ -63,10 +63,10 @@
 
 <script setup>
 import Btn from "../components/btn.vue";
-import BanEspaceJeux from "../components/banEspaceJeux.vue";
 import Avis from "../components/avis.vue";
 import EventGame from "../components/eventGame.vue";
 import BarDesign from "../components/barDesign.vue";
+import vrEvent from '../assets/img/vrEvent.png';
 </script>
 
 <style>
