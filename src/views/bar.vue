@@ -22,13 +22,14 @@
 
         <div class="">
             <div class="my-5 cursor-pointer" @click="game">
-                <BanEspaceJeux image="src/assets/img/manetteEspaceJeux.png">JEUX VIDEO</BanEspaceJeux>
+                <BanEspaceJeux :image="manetteEspaceJeux">JEUX VIDEO</BanEspaceJeux>
             </div> 
             <div class="my-5 cursor-pointer" @click="realite">
-                <BanEspaceJeux image="src/assets/img/realite-virtuelle.png">REALITE VIRTUELLE</BanEspaceJeux>
+                <BanEspaceJeux :image="realitevirtuelle">REALITE VIRTUELLE</BanEspaceJeux>
             </div>
             <div class="my-5 cursor-pointer" @click="societe">
-                <BanEspaceJeux image="src/assets/img/game-societe.png">JEUX DE SOCIETE</BanEspaceJeux>
+                <BanEspaceJeux :image="gamesociete">JEUX DE SOCIETE</BanEspaceJeux>
+                
             </div>
         </div>
 
@@ -36,7 +37,7 @@
             <Avis />
         </div>
         <div>
-            <EventGame image="src/assets/img/vrEvent.png">
+            <EventGame :image="vrEvent">
                 <template #title>Soirees speciales gaming</template>
                 <template #subtitle>Escape Game <br> realite virtuelle</template>
                 <template #description>
@@ -60,6 +61,10 @@ import BanEspaceJeux from "../components/banEspaceJeux.vue";
 import Avis from "../components/avis.vue";
 import EventGame from "../components/eventGame.vue";
 import router from "@/router";
+import manetteEspaceJeux from '../assets/img/manetteEspaceJeux.png';
+import realitevirtuelle from '../assets/img/realite-virtuelle.png';
+import gamesociete from '../assets/img/game-societe.png';
+import vrEvent from '../assets/img/vrEvent.png';
 
 const realite = () => {
     router.push('realite-virtuelle');
@@ -75,6 +80,7 @@ const societe = () => {
     router.push('jeux-societe');
     
 }
+
 </script>
 
 <style scoped>

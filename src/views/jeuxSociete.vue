@@ -39,7 +39,7 @@
             <Avis />
         </div>
         <div>
-            <EventGame image="src/assets/img/societe-image4.jpg">
+            <EventGame :image="societe">
                 <template #title>EVENEMENTS JEUX DE SOCIETE</template>
                 <template #subtitle>SOIREE SPECIALE <br> UNO</template>
                 <template #description>
@@ -62,10 +62,11 @@
 
 <script setup>
 import Btn from "../components/btn.vue";
-import BanEspaceJeux from "../components/banEspaceJeux.vue";
 import Avis from "../components/avis.vue";
 import EventGame from "../components/eventGame.vue";
 import BarDesign from "../components/barDesign.vue";
+import societe from '../assets/img/societe-image4.jpg';
+
 </script>
 
 <style>

@@ -39,7 +39,7 @@
             <Avis />
         </div>
         <div>
-            <EventGame image="src/assets/img/STREET.png">
+            <EventGame :image="STREET">
                 <template #title>EVENEMENTS JEUX VIDEO</template>
                 <template #subtitle>TOURNOI <br> Street Fighter</template>
                 <template #description>
@@ -64,10 +64,12 @@
 
 <script setup>
 import Btn from "../components/btn.vue";
-import BanEspaceJeux from "../components/banEspaceJeux.vue";
 import Avis from "../components/avis.vue";
 import EventGame from "../components/eventGame.vue";
 import BarDesign from "../components/barDesign.vue";
+import STREET from '../assets/img/STREET.png';
+
+
 </script>
 
 <style>

@@ -23,14 +23,14 @@
             <TextAnimation/>
         </div>
         <div>
-            <BanEspaceJeux image="@/src/assets/img/manetteEspaceJeux.png">Nos espaces jeux</BanEspaceJeux>
+            <BanEspaceJeux :image="manetteEspaceJeux">Nos espaces jeux</BanEspaceJeux>
         </div>
         <div>
             <Avis/>
         </div>
 
         <div>
-            <EventGame :image="manetteEspaceJeux">
+            <EventGame :image="vrEvent">
                 <template #title>Soirees speciales gaming</template>
                 <template #subtitle>Escape Game <br> realite virtuelle</template>
                 <template #description>
@@ -61,7 +61,8 @@ import TextAnimation from "../components/textAnimation.vue";
 import BanEspaceJeux from "../components/banEspaceJeux.vue";
 import EventGame from "../components/eventGame.vue";
 import BarDesign from "../components/barDesign.vue";
-import manetteEspaceJeux from '@/assets/img/manetteEspaceJeux.png';
+import vrEvent from '../assets/img/vrEvent.png';
+import manetteEspaceJeux from '../assets/img/manetteEspaceJeux.png';
 
 
 </script>
