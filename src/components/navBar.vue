@@ -7,8 +7,8 @@
         </div>
 
         <div v-if="!isClosed">
-            <nav class="mr-6">
-                <ul class="text-right text-white">
+            <nav class="">
+                <ul class="text-right bgn text-white pr-8">
                     <button
                         class="button text-lg uppercase mt-5 w-40 bg-white font-semibold rounded-md h-10">réserver</button>
 
@@ -31,7 +31,7 @@
                     <li class="font text-md uppercase mt-5 font-extrabold">reserver une partie</li>
                     <li class="font text-md uppercase mt-5">le concept pexing bar</li>
                     <li class="font text-md uppercase mt-5">le bar-snack</li>
-                    <li class="font text-md uppercase mt-5">contact</li>
+                    <li class="font text-md uppercase mt-5 pb-5">contact</li>
                 </ul>
             </nav>
         </div>
@@ -82,6 +82,11 @@ const societe = () => {
     top: 0;
     z-index: 9999;
     background-color: #2D005D
+}
+
+.bgn{
+    background-color: rgb(45, 0, 93,0.8);
+    width: 100%;
 }
 
 .font {
