@@ -15,13 +15,13 @@
             </Btn>
         </div>
         <div class="">
-            <div class="my-5 " >
+            <div class="my-5 cursor-pointer " >
                 <BanEspaceJeux @click="game" image="../assets/img/manetteEspaceJeux.png">JEUX VIDEO</BanEspaceJeux>
             </div>
-            <div class="my-5" @click="realite">
+            <div class="my-5 cursor-pointer" @click="realite">
                 <BanEspaceJeux image="../assets/img/realite-virtuelle.png">REALITE VIRTUELLE</BanEspaceJeux>
             </div>
-            <div class="my-5" @click="societe">
+            <div class="my-5 cursor-pointer" @click="societe">
                 <BanEspaceJeux image="../assets/img/game-societe.png">JEUX DE SOCIETE</BanEspaceJeux>
             </div>
         </div>

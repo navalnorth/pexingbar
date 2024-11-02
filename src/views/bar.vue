@@ -21,13 +21,13 @@
         </div>
 
         <div class="">
-            <div class="my-5">
+            <div class="my-5 cursor-pointer" @click="game">
                 <BanEspaceJeux image="src/assets/img/manetteEspaceJeux.png">JEUX VIDEO</BanEspaceJeux>
-            </div>
-            <div class="my-5">
+            </div> 
+            <div class="my-5 cursor-pointer" @click="realite">
                 <BanEspaceJeux image="src/assets/img/realite-virtuelle.png">REALITE VIRTUELLE</BanEspaceJeux>
             </div>
-            <div class="my-5">
+            <div class="my-5 cursor-pointer" @click="societe">
                 <BanEspaceJeux image="src/assets/img/game-societe.png">JEUX DE SOCIETE</BanEspaceJeux>
             </div>
         </div>
@@ -59,6 +59,22 @@
 import BanEspaceJeux from "../components/banEspaceJeux.vue";
 import Avis from "../components/avis.vue";
 import EventGame from "../components/eventGame.vue";
+import router from "@/router";
+
+const realite = () => {
+    router.push('realite-virtuelle');
+   
+}
+
+const game = () => {
+    router.push('jeux-video');
+   
+}
+
+const societe = () => {
+    router.push('jeux-societe');
+    
+}
 </script>
 
 <style scoped>

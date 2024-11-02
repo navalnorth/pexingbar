@@ -8,9 +8,10 @@
 
         <div v-if="!isClosed">
             <nav class="">
-                <ul class="text-right bgn text-white pr-8">
-                    <button
-                        class="button text-lg uppercase mt-5 w-40 bg-white font-semibold rounded-md h-10">réserver</button>
+                <ul class="text-right bgn p-2 text-white pr-8">
+                    <!-- <button
+                        class="button text-lg uppercase mt-5 w-40 bg-white font-semibold rounded-md h-10">réserver
+                    </button> -->
 
                     <li class="font text-md uppercase mt-5 cursor-pointer">
                         <div class="flex justify-end mr-32" @click="openSousMenu" v-if="isClosed2">
@@ -26,10 +27,10 @@
                             <li @click="societe" class="py-2 text-xs">jeux de societe</li>
                         </ul>
                     </li>
-
+<!-- 
                     <li class="font text-md uppercase mt-5">nos evenements</li>
                     <li class="font text-md uppercase mt-5 font-extrabold">reserver une partie</li>
-                    <li class="font text-md uppercase mt-5">le concept pexing bar</li>
+                    <li class="font text-md uppercase mt-5">le concept pexing bar</li> -->
                     <li @click="bar" class="font text-md uppercase mt-5">le bar-snack</li>
                     <li @click="contact" class="font text-md uppercase mt-5 pb-5">contact</li>
                 </ul>
