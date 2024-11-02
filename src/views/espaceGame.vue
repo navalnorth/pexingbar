@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col  text-white ">
-        <div class="w-3/4 flex flex-col mx-auto mb-10 titems-center  ">
+        <div class="w-3/4 flex flex-col mx-auto mb-10 items-center  ">
             <p class="font text-3xl mt-4">3 ESPACES</p>
             <p class="font2">POUR UN MAXIMUM DE FUN</p>
             <p class="font2 my-4">Passionnes de jeux video, de realite <br>
