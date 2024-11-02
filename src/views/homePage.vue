@@ -23,14 +23,14 @@
             <TextAnimation/>
         </div>
         <div>
-            <BanEspaceJeux image="src/assets/img/manetteEspaceJeux.png">Nos espaces jeux</BanEspaceJeux>
+            <BanEspaceJeux image="../assets/img/manetteEspaceJeux.png">Nos espaces jeux</BanEspaceJeux>
         </div>
         <div>
             <Avis/>
         </div>
 
         <div>
-            <EventGame image="src/assets/img/vrEvent.png">
+            <EventGame image="../assets/img/vrEvent.png">
                 <template #title>Soirees speciales gaming</template>
                 <template #subtitle>Escape Game <br> realite virtuelle</template>
                 <template #description>

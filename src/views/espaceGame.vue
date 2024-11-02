@@ -16,13 +16,13 @@
         </div>
         <div class="">
             <div class="my-5 " >
-                <BanEspaceJeux @click="game" image="src/assets/img/manetteEspaceJeux.png">JEUX VIDEO</BanEspaceJeux>
+                <BanEspaceJeux @click="game" image="../assets/img/manetteEspaceJeux.png">JEUX VIDEO</BanEspaceJeux>
             </div>
             <div class="my-5" @click="realite">
-                <BanEspaceJeux image="src/assets/img/realite-virtuelle.png">REALITE VIRTUELLE</BanEspaceJeux>
+                <BanEspaceJeux image="../assets/img/realite-virtuelle.png">REALITE VIRTUELLE</BanEspaceJeux>
             </div>
             <div class="my-5" @click="societe">
-                <BanEspaceJeux image="src/assets/img/game-societe.png">JEUX DE SOCIETE</BanEspaceJeux>
+                <BanEspaceJeux image="../assets/img/game-societe.png">JEUX DE SOCIETE</BanEspaceJeux>
             </div>
         </div>
 
@@ -30,7 +30,7 @@
             <Avis />
         </div>
         <div>
-            <EventGame image="src/assets/img/vrEvent.png">
+            <EventGame image="../assets/img/vrEvent.png">
                 <template #title>Soirees speciales gaming</template>
                 <template #subtitle>Escape Game <br> realite virtuelle</template>
                 <template #description>
