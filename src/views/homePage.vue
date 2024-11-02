@@ -23,7 +23,7 @@
             <TextAnimation/>
         </div>
         <div>
-            <BanEspaceJeux image="src/assets/img/manetteEspaceJeux.png"/>
+            <BanEspaceJeux image="src/assets/img/manetteEspaceJeux.png">Nos espaces jeux</BanEspaceJeux>
         </div>
         <div>
             <Avis/>

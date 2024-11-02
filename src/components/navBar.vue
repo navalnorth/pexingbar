@@ -12,14 +12,14 @@
                     <button
                         class="button text-lg uppercase mt-5 w-40 bg-white font-semibold rounded-md h-10">réserver</button>
 
-                    <li class="font text-md uppercase mt-5 cursor-pointer" @click="openSousMenu">
-                        <div class="flex justify-end mr-32" v-if="isClosed2">
+                    <li class="font text-md uppercase mt-5 cursor-pointer" >
+                        <div class="flex justify-end mr-32" @click="openSousMenu" v-if="isClosed2">
                             <AnOutlinedDown class="text-white cursor-pointer absolute mt-1" />
                         </div>
-                        <div class="flex justify-end mr-32" v-if="!isClosed2">
+                        <div class="flex justify-end mr-32" @click="openSousMenu" v-if="!isClosed2">
                             <AkChevronUpSmall class="text-white cursor-pointer absolute mt-1" />
                         </div>
-                        les espaces jeux
+                        <p @click="espaceGame">les espaces jeux </p>
                         <ul v-if="isClosed2">
                             <li class="py-1 text-xs"><a href="#">jeux video</a></li>
                             <li class="py-1 text-xs"><a href="#">realite virtuelle</a></li>
@@ -41,6 +41,7 @@
 <script setup lang="ts">
 import { AnOutlinedMenu, AnOutlinedDown, AkChevronUpSmall } from '@kalimahapps/vue-icons';
 import { ref } from 'vue';
+import  router from '@/router';
 
 const isClosed = ref(true)
 const isClosed2 = ref(false)
@@ -50,6 +51,10 @@ const openMenu = () => {
 }
 const openSousMenu = () => {
     isClosed2.value = !isClosed2.value
+}
+
+const espaceGame = () =>  {
+    router.push('/espace-game')
 }
 
 </script>

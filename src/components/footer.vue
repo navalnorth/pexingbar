@@ -1,5 +1,8 @@
 <template>
-    <div class="tout px-8 py-4">
+    <div class="tout relative px-8 py-4 top-">
+        <div class="absolute right-4">
+            <img src="./../assets/img/fleche.png" alt="" @click="scrollToTop">
+        </div>
         <div>
             <img src="../assets/img/footerLogo.png" class="w-48">
 
@@ -69,7 +72,14 @@
 
 </template>
 
-
+<script setup>
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Adds smooth scrolling effect
+    });
+}
+</script>
 <style scoped>
 .tout {
     color: white;

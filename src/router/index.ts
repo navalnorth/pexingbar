@@ -8,6 +8,11 @@ const routes = [
     name: 'Home',
     component: HomePage,
   },
+  {
+    path: '/espace-game',
+    name: 'app_espace-game',
+    component: () => import('../views/espaceGame.vue')
+  },
 ];
 
 const router = createRouter({
