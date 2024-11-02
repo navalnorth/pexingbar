@@ -28,6 +28,16 @@ const routes = [
     name: 'app_jeux-societe',
     component: () => import('../views/jeuxSociete.vue')
   },
+  {
+    path: '/bar',
+    name: 'bar',
+    component: () => import('../views/bar.vue')
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('../views/contact.vue')
+  },
 ];
 
 const router = createRouter({
