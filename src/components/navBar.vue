@@ -21,9 +21,9 @@
                         </div>
                         <p @click="espaceGame">les espaces jeux </p>
                         <ul v-if="isClosed2">
-                            <li class="py-1 text-xs"><a href="#">jeux video</a></li>
-                            <li class="py-1 text-xs"><a href="#">realite virtuelle</a></li>
-                            <li class="py-1 text-xs"><a href="#">jeux de societe</a></li>
+                            <li class="py-2 text-xs"><a href="#" @click="game">jeux video</a></li>
+                            <li class="py-2 text-xs"><a href="#" @click="realite">realite virtuelle</a></li>
+                            <li class="py-2 text-xs"><a href="#" @click="societe">jeux de societe</a></li>
                         </ul>
                     </li>
 
@@ -54,11 +54,36 @@ const openSousMenu = () => {
 }
 
 const espaceGame = () =>  {
-    router.push('/espace-game')
+    router.push('/espace-game');
+    openMenu();
+}
+
+const realite = () => {
+    router.push('realite-virtuelle');
+    openMenu();
+}
+
+const game = () => {
+    router.push('jeux-video');
+    openMenu();
+}
+
+const societe = () => {
+    router.push('jeux-societe');
+    openMenu();
 }
 
 </script>
 <style scoped>
+.tout{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    z-index: 9999;
+    background-color: #2D005D
+}
+
 .font {
     font-family: var(--futura);
 }

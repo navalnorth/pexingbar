@@ -1,5 +1,6 @@
 <template>
   <NavBar />
+  <div class="h-20 w-full"></div>
   <RouterView />
   <Footer />
 </template>
